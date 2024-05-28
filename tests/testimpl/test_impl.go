@@ -3,7 +3,7 @@ package common
 import (
 	"testing"
 
-	"github.com/nexient-llc/lcaf-component-terratest-common/types"
+	"github.com/launchbynttdata/lcaf-component-terratest/types"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -14,7 +14,7 @@ func TestComposableComplete(t *testing.T, ctx types.TestContext) {
 	})
 
 	// Implement your own tests below this line. See the README.md file
-	// at https://github.com/nexient-llc/lcaf-component-terratest-common
+	// at https://github.com/launchbynttdata/lcaf-component-terratest
 	// for more details on writing tests.
 }
 
@@ -25,6 +25,6 @@ func TestNonComposableComplete(t *testing.T, ctx types.TestContext) {
 	})
 
 	// Implement your own tests below this line. See the README.md file
-	// at https://github.com/nexient-llc/lcaf-component-terratest-common
+	// at https://github.com/launchbynttdata/lcaf-component-terratest
 	// for more details on writing tests.
 }

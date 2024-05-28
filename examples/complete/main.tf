@@ -11,7 +11,7 @@
 // limitations under the License.
 
 module "private_ca" {
-  source = "git::https://github.com/nexient-llc/tf-aws-module-private_ca?ref=0.1.0"
+  source = "git::https://github.com/launchbynttdata/tf-aws-module_primitive-private_ca?ref=1.0.0"
 
   naming_prefix = "demo-20534"
 

@@ -1,10 +1,10 @@
-module github.com/nexient-llc/tf-aws-module-acm_private_cert
+module github.com/launchbynttdata/tf-aws-module_primitive-acm_private_cert
 
-go 1.20
+go 1.21
 
 require (
-	github.com/nexient-llc/lcaf-component-terratest-common v0.0.0-20240126002307-4fd81b54916a
-	github.com/stretchr/testify v1.8.1
+	github.com/launchbynttdata/lcaf-component-terratest v1.0.4
+	github.com/stretchr/testify v1.9.0
 )
 
 require (
