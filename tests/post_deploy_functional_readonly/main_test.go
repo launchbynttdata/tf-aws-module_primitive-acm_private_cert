@@ -22,5 +22,5 @@ func TestAcmPrivateCertModule(t *testing.T) {
 		SetTestSpecificFlags(map[string]types.TestFlags{}).
 		Build()
 
-	lib.RunNonDestructiveTest(t, *ctx, testimpl.TestComposableComplete)
+	lib.RunNonDestructiveTest(t, *ctx, testimpl.TestAcmCertExists)
 }

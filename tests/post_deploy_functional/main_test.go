@@ -21,5 +21,5 @@ func TestACMPrivateCertModule(t *testing.T) {
 		SetTestConfigFileName(infraTFVarFileNameDefault).
 		Build()
 
-	lib.RunSetupTestTeardown(t, *ctx, testimpl.TestComposableComplete, testimpl.TestNonComposableComplete)
+	lib.RunSetupTestTeardown(t, *ctx, testimpl.TestAcmCertExists)
 }

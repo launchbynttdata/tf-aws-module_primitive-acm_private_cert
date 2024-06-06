@@ -11,9 +11,10 @@
 // limitations under the License.
 
 module "private_ca" {
-  source = "git::https://github.com/launchbynttdata/tf-aws-module_primitive-private_ca?ref=1.0.0"
+  source = "git::https://github.com/launchbynttdata/tf-aws-module_primitive-private_ca?ref=1.0.1"
 
-  naming_prefix = "demo-20534"
+  logical_product_family  = "demo"
+  logical_product_service = "20534"
 
   tags = var.tags
 }
