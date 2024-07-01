@@ -11,7 +11,8 @@
 // limitations under the License.
 
 module "private_ca" {
-  source = "git::https://github.com/launchbynttdata/tf-aws-module_primitive-private_ca?ref=1.0.1"
+  source  = "terraform.registry.launch.nttdata.com/module_primitive/private_ca/aws"
+  version = "~> 1.0"
 
   logical_product_family  = "demo"
   logical_product_service = "20534"
