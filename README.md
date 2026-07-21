@@ -123,19 +123,13 @@ If `make check` target is successful, developer is good to commit the code to pr
 # Know Issues
 Currently, the `encrypt at transit` is not supported in terraform. There is an open issue for this logged with Hashicorp - https://github.com/hashicorp/terraform-provider-aws/pull/26987
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.0 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.28.0 |
-
-## Providers
-
-| Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.72.1 |
 
 ## Modules
 
@@ -151,8 +145,8 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_private_ca_arn"></a> [private\_ca\_arn](#input\_private\_ca\_arn) | ARN for the Private CA | `string` | n/a | yes |
 | <a name="input_domain_name"></a> [domain\_name](#input\_domain\_name) | Domain name for the certificate to be created | `string` | n/a | yes |
+| <a name="input_private_ca_arn"></a> [private\_ca\_arn](#input\_private\_ca\_arn) | ARN for the Private CA | `string` | n/a | yes |
 | <a name="input_subject_alternative_names"></a> [subject\_alternative\_names](#input\_subject\_alternative\_names) | Alternative names to be added to the certificates | `list(string)` | `[]` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | A map of custom tags to be associated with the private certificate | `map(string)` | `{}` | no |
 
@@ -160,9 +154,9 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_certificate_id"></a> [certificate\_id](#output\_certificate\_id) | n/a |
 | <a name="output_certificate_arn"></a> [certificate\_arn](#output\_certificate\_arn) | n/a |
+| <a name="output_certificate_id"></a> [certificate\_id](#output\_certificate\_id) | n/a |
 | <a name="output_certificate_status"></a> [certificate\_status](#output\_certificate\_status) | n/a |
 | <a name="output_renewal_eligibility"></a> [renewal\_eligibility](#output\_renewal\_eligibility) | n/a |
 | <a name="output_valid_upto"></a> [valid\_upto](#output\_valid\_upto) | n/a |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->

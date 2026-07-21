@@ -13,7 +13,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-func TestAcmCertExists(t *testing.T, ctx types.TestContext) {
+func TestComposableAcmCertExists(t *testing.T, ctx types.TestContext) {
 	acmClient := acm.NewFromConfig(GetAWSConfig(t))
 	certArn := terraform.Output(t, ctx.TerratestTerraformOptions(), "certificate_arn")
 	certStatus := terraform.Output(t, ctx.TerratestTerraformOptions(), "certificate_status")

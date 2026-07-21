@@ -1,6 +1,6 @@
 # complete
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -8,10 +8,6 @@
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.0 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.28.0 |
 | <a name="requirement_random"></a> [random](#requirement\_random) | >= 3.6.0 |
-
-## Providers
-
-No providers.
 
 ## Modules
 
@@ -36,9 +32,9 @@ No resources.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_certificate_id"></a> [certificate\_id](#output\_certificate\_id) | n/a |
 | <a name="output_certificate_arn"></a> [certificate\_arn](#output\_certificate\_arn) | n/a |
+| <a name="output_certificate_id"></a> [certificate\_id](#output\_certificate\_id) | n/a |
 | <a name="output_certificate_status"></a> [certificate\_status](#output\_certificate\_status) | n/a |
 | <a name="output_renewal_eligibility"></a> [renewal\_eligibility](#output\_renewal\_eligibility) | n/a |
 | <a name="output_valid_upto"></a> [valid\_upto](#output\_valid\_upto) | n/a |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->
