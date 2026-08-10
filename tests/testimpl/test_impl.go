@@ -15,9 +15,9 @@ import (
 
 func TestComposableAcmCertExists(t *testing.T, ctx types.TestContext) {
 	acmClient := acm.NewFromConfig(GetAWSConfig(t))
-	certArn := terraform.Output(t, ctx.TerratestTerraformOptions(), "certificate_arn")
-	certStatus := terraform.Output(t, ctx.TerratestTerraformOptions(), "certificate_status")
-	certRenewal := terraform.Output(t, ctx.TerratestTerraformOptions(), "renewal_eligibility")
+	certArn := terraform.OutputContext(t, context.Background(), ctx.TerratestTerraformOptions(), "certificate_arn")
+	certStatus := terraform.OutputContext(t, context.Background(), ctx.TerratestTerraformOptions(), "certificate_status")
+	certRenewal := terraform.OutputContext(t, context.Background(), ctx.TerratestTerraformOptions(), "renewal_eligibility")
 
 	t.Run("TestDoesCertExist", func(t *testing.T) {
 		output, err := acmClient.DescribeCertificate(context.TODO(), &acm.DescribeCertificateInput{CertificateArn: &certArn})
